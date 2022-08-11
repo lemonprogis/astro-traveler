@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-    <BrowserRouter basename={'/edbrigglermusic'}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route path={'/'} element={<App />} />
             <Route path={'/cancel'} element={<App />} />
